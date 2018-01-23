@@ -95,29 +95,29 @@ def full?(@board)
  board.all?{|space| space =="X"|| space =="O"}
 end 
  
-def draw?(board)
-  full?(board) && !won?(board)
+def draw?(@board)
+  full?(@board) && !won?(@board)
 end
 
-def over?(board)
-  won?(board) || draw?(board) 
+def over?(@board)
+  won?(@board) || draw?(@board) 
 end
 
-def winner(board)
-  if winc = won?(board)
+def winner(@board)
+  if winc = won?(@board)
     board[winc.first]
   end
 end
 
 #def play
   
-def play(board)
-  while !over?(board)
-    turn(board)
+def play(@board)
+  while !over?(@board)
+    turn(@board)
   end
-  if won?(board)
-   puts "Congratulations #{winner(board)}!" 
- elsif draw?(board)
+  if won?(@board)
+   puts "Congratulations #{winner(@board)}!" 
+ elsif draw?(@board)
    puts "Cat's Game!"
  end
  end
