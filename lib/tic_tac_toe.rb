@@ -8,7 +8,7 @@ class TicTacToe
   def board
     @board
   end
-end
+
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
@@ -128,3 +128,4 @@ def play(board)
    puts "Cat's Game!"
  end
  end
+end
