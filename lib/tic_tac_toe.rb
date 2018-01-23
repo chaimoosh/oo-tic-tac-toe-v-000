@@ -76,7 +76,7 @@ def current_player(@board)
   end
 end
 
-def won?(board)
+def won?(@board)
 WIN_COMBINATIONS.detect do |win_combinations|
   index_1 = win_combinations[0]
   index_2 = win_combinations[1]
@@ -91,7 +91,7 @@ WIN_COMBINATIONS.detect do |win_combinations|
 end
 end
 
-def full?(board) 
+def full?(@board) 
  board.all?{|space| space =="X"|| space =="O"}
 end 
  
