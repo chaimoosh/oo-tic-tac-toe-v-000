@@ -2,6 +2,7 @@ class TicTacToe
   def initialize(board)
     @board = board
   end
+  def 
 WIN_COMBINATIONS = [
   [0,1,2],
   [3,4,5],
